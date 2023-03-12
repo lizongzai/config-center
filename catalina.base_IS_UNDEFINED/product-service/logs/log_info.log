@@ -124,3 +124,95 @@
 2023-03-12 19:06:38.118 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 2023-03-12 19:11:38.122 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 2023-03-12 19:16:38.134 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:21:38.139 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:26:38.141 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:31:38.147 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:36:38.150 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:41:38.158 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:46:38.159 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:51:38.171 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:56:38.184 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 20:01:38.199 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 20:06:38.202 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 20:11:38.205 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 20:15:30.447 [product-service,,] [SpringContextShutdownHook] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+2023-03-12 20:15:30.448 [product-service,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCT-SERVICE/192.168.126.1:7070: registering service...
+2023-03-12 20:15:30.459 [product-service,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCT-SERVICE/192.168.126.1:7070 - registration status: 204
+2023-03-12 20:15:30.463 [product-service,,] [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-03-12 20:15:30.499 [product-service,,] [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-03-12 20:15:33.504 [product-service,,] [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2023-03-12 20:15:33.520 [product-service,,] [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCT-SERVICE/192.168.126.1:7070 - deregister  status: 200
+2023-03-12 20:15:33.531 [product-service,,] [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2023-03-12 20:15:33.531 [product-service,,] [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-03-12 20:15:33.541 [product-service,,] [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-03-12 20:15:42.457 [localhost,,] [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-03-12 20:15:42.481 [localhost,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-03-12 20:15:42.578 [localhost,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2023-03-12 20:15:42.578 [localhost,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2023-03-12 20:15:42.661 [localhost,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2023-03-12 20:15:42.661 [localhost,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2023-03-12 20:15:42.755 [localhost,,] [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 20:15:43.110 [localhost,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-03-12 20:15:43.110 [localhost,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-03-12 20:15:43.111 [localhost,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-03-12 20:15:43.111 [localhost,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2023-03-12 20:15:43.111 [localhost,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-03-12 20:15:43.111 [localhost,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-03-12 20:15:43.111 [localhost,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-03-12 20:15:43.163 [localhost,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Not registering with Eureka server per configuration
+2023-03-12 20:15:43.166 [localhost,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1678623343165 with initial instances count: 0
+2023-03-12 20:15:43.777 [localhost,,] [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2023-03-12 20:15:45.989 [localhost,,] [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=product-service, profiles=[prod], label=main, version=07f32d56ef675adf2cd143173c1d3f7638aeac3c, state=null
+2023-03-12 20:15:45.991 [localhost,,] [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource@974861985 {name='bootstrapProperties-configClient', properties={config.client.version=07f32d56ef675adf2cd143173c1d3f7638aeac3c}}, BootstrapPropertySource@1578801260 {name='bootstrapProperties-https://github.com/lizongzai/config-repo.git/product-service-prod.yml', properties={spring.main.allow-circular-references=true, spring.rabbitmq.password=password, eureka.instance.instance-id=${spring.cloud.client.ip-address}:${server.port}, spring.rabbitmq.host=192.168.126.64, spring.rabbitmq.listener.simple.retry.enabled=true, spring.zipkin.rabbitmq.queue=zipkin, spring.rabbitmq.listener.direct.retry.enabled=true, spring.rabbitmq.listener.direct.retry.initial-interval=5000, spring.rabbitmq.listener.direct.retry.max-attempts=5, spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver, eureka.client.fetch-registry=true, spring.zipkin.base-url=http://192.168.126.64:9411/, server.port=7070, eureka.client.serviceUrl.defaultZone=http://root:123456@localhost:8761/eureka/,http://root:123456@localhost:8762/eureka/, spring.rabbitmq.port=5672, eureka.client.register-with-eureka=true, spring.application.name=product-service, spring.rabbitmq.listener.simple.retry.max-attempts=5, spring.sleuth.sampler.probability=1.0, spring.zipkin.sender.type=rabbit, spring.rabbitmq.username=lizongzai, spring.rabbitmq.listener.simple.retry.initial-interval=5000, eureka.instance.prefer-ip-address=true, spring.datasource.password=password, spring.datasource.username=root, spring.datasource.url=jdbc:mysql://localhost:3306/micro_service?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai, name=product-service-prod, spring.mvc.pathmatch.matching-strategy=ANT_PATH_MATCHER, spring.rabbitmq.virtual-host=/}}]
+2023-03-12 20:15:46.032 [product-service,,] [main] INFO  com.example.ProductServiceApplication - No active profile set, falling back to default profiles: default
+2023-03-12 20:15:46.738 [product-service,,] [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=0ccfcb54-2ed7-367e-b15f-f0904dd3977c
+2023-03-12 20:15:46.914 [product-service,,] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-12 20:15:47.173 [product-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7070 (http)
+2023-03-12 20:15:47.180 [product-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7070"]
+2023-03-12 20:15:47.180 [product-service,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-12 20:15:47.180 [product-service,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2023-03-12 20:15:47.313 [product-service,,] [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-12 20:15:47.314 [product-service,,] [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1272 ms
+2023-03-12 20:15:47.400 [product-service,,] [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-03-12 20:15:47.406 [product-service,,] [main] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@66048c9e
+2023-03-12 20:15:49.362 [product-service,,] [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-03-12 20:15:49.506 [product-service,,] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-12 20:15:52.166 [product-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-03-12 20:15:52.173 [product-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2023-03-12 20:15:52.233 [product-service,,] [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-03-12 20:15:52.317 [product-service,,] [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-03-12 20:15:52.320 [product-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-03-12 20:15:52.321 [product-service,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2023-03-12 20:15:52.321 [product-service,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2023-03-12 20:15:52.321 [product-service,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2023-03-12 20:15:52.321 [product-service,,] [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2023-03-12 20:15:52.344 [product-service,,] [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 20:15:52.345 [product-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-03-12 20:15:52.345 [product-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-03-12 20:15:52.345 [product-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-03-12 20:15:52.345 [product-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2023-03-12 20:15:52.345 [product-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-03-12 20:15:52.345 [product-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-03-12 20:15:52.345 [product-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-03-12 20:15:52.441 [product-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2023-03-12 20:15:52.442 [product-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-03-12 20:15:52.443 [product-service,,] [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-03-12 20:15:52.444 [product-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1678623352444 with initial instances count: 7
+2023-03-12 20:15:52.448 [product-service,,] [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application PRODUCT-SERVICE with eureka with status UP
+2023-03-12 20:15:52.449 [product-service,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1678623352449, current=UP, previous=STARTING]
+2023-03-12 20:15:52.452 [product-service,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCT-SERVICE/192.168.126.1:7070: registering service...
+2023-03-12 20:15:52.482 [product-service,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7070"]
+2023-03-12 20:15:52.489 [product-service,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCT-SERVICE/192.168.126.1:7070 - registration status: 204
+2023-03-12 20:15:52.501 [product-service,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7070 (http) with context path ''
+2023-03-12 20:15:52.501 [product-service,,] [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 7070
+2023-03-12 20:15:53.359 [product-service,,] [main] INFO  com.example.ProductServiceApplication - Started ProductServiceApplication in 13.706 seconds (JVM running for 15.059)
+2023-03-12 20:15:53.980 [product-service,,] [RMI TCP Connection(5)-26.26.26.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [192.168.126.64:5672]
+2023-03-12 20:15:53.982 [product-service,,] [RMI TCP Connection(6)-26.26.26.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-12 20:15:53.982 [product-service,,] [RMI TCP Connection(6)-26.26.26.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-12 20:15:53.987 [product-service,,] [RMI TCP Connection(5)-26.26.26.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#4ba1f425:0/SimpleConnection@4268f031 [delegate=amqp://lizongzai@192.168.126.64:5672/, localPort= 60650]
+2023-03-12 20:15:53.995 [product-service,,] [RMI TCP Connection(6)-26.26.26.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2023-03-12 20:15:54.017 [product-service,,] [RMI TCP Connection(5)-26.26.26.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-03-12 20:15:54.188 [product-service,,] [RMI TCP Connection(5)-26.26.26.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-03-12 20:15:54.228 [product-service,,] [RMI TCP Connection(5)-26.26.26.1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2023-03-12 20:15:55.849 [product-service,,] [RMI TCP Connection(5)-26.26.26.1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=product-service, profiles=[prod], label=main, version=07f32d56ef675adf2cd143173c1d3f7638aeac3c, state=null
+2023-03-12 20:20:52.360 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

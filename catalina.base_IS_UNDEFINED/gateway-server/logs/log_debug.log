@@ -8151,3 +8151,179 @@ Unconditional classes:
 2023-03-12 19:19:09.322 [gateway-server,,] [PollingServerListUpdater-1] DEBUG com.netflix.loadbalancer.BaseLoadBalancer - LoadBalancer [ORDER-SERVICE_defaultzone]:  addServer [192.168.126.1:9091]
 2023-03-12 19:19:09.323 [gateway-server,,] [PollingServerListUpdater-1] DEBUG com.netflix.loadbalancer.BaseLoadBalancer - LoadBalancer [ORDER-SERVICE]:  forceQuickPing invoking
 2023-03-12 19:19:09.323 [gateway-server,,] [PollingServerListUpdater-1] DEBUG com.netflix.loadbalancer.BaseLoadBalancer - LoadBalancer:  PingTask executing [1] servers configured
+2023-03-12 19:19:33.624 [gateway-server,,] [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.discovery.shared.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+2023-03-12 19:19:33.624 [gateway-server,,] [Eureka-JerseyClient-Conn-Cleaner2] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+2023-03-12 19:19:33.774 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] DEBUG com.netflix.discovery.endpoint.EndpointUtils - The availability zone for the given region us-east-1 are [defaultZone]
+2023-03-12 19:19:33.774 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] DEBUG c.n.d.shared.resolver.aws.ConfigClusterResolver - Config resolved to [AwsEndpoint{ serviceUrl='http://root:123456@localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}, AwsEndpoint{ serviceUrl='http://root:123456@localhost:8762/eureka/', region='us-east-1', zone='defaultZone'}]
+2023-03-12 19:19:33.774 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] DEBUG c.n.d.s.resolver.aws.ZoneAffinityClusterResolver - Local zone=defaultZone; resolved to: [AwsEndpoint{ serviceUrl='http://root:123456@localhost:8762/eureka/', region='us-east-1', zone='defaultZone'}, AwsEndpoint{ serviceUrl='http://root:123456@localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+2023-03-12 19:19:33.774 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] DEBUG c.netflix.discovery.shared.resolver.AsyncResolver - Resolved to [AwsEndpoint{ serviceUrl='http://root:123456@localhost:8762/eureka/', region='us-east-1', zone='defaultZone'}, AwsEndpoint{ serviceUrl='http://root:123456@localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+2023-03-12 19:19:34.640 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.discovery.shared.MonitoredConnectionManager - Get connection: {}->http://localhost:8762, timeout = 5000
+2023-03-12 19:19:34.640 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - [{}->http://localhost:8762] total kept alive: 2, total issued: 0, total allocated: 2 out of 200
+2023-03-12 19:19:34.640 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Getting free connection [{}->http://localhost:8762][null]
+2023-03-12 19:19:34.640 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.discovery.shared.MonitoredConnectionManager - Get connection: {}->http://localhost:8762, timeout = 5000
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - [{}->http://localhost:8762] total kept alive: 1, total issued: 1, total allocated: 2 out of 200
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Getting free connection [{}->http://localhost:8762][null]
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: JSESSIONID][value: 4A9AFA5DA4FF048EFB18507AFD9DEE21][domain: localhost][path: /][expiry: null] match [localhost:8762/eureka/apps/GATEWAY-SERVER/192.168.126.1:9000]
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG o.a.h.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG o.a.h.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: PUT /eureka/apps/GATEWAY-SERVER/192.168.126.1:9000?status=UP&lastDirtyTimestamp=1678619073891 HTTP/1.1
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "PUT /eureka/apps/GATEWAY-SERVER/192.168.126.1:9000?status=UP&lastDirtyTimestamp=1678619073891 HTTP/1.1[\r][\n]"
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Name: DefaultClient[\r][\n]"
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Version: 1.4[\r][\n]"
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Id: 192.168.126.1[\r][\n]"
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip[\r][\n]"
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "Host: localhost:8762[\r][\n]"
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "User-Agent: Java-EurekaClient/v1.9.13[\r][\n]"
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "Cookie: JSESSIONID=4A9AFA5DA4FF048EFB18507AFD9DEE21[\r][\n]"
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "Authorization: Basic cm9vdDoxMjM0NTY=[\r][\n]"
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> PUT /eureka/apps/GATEWAY-SERVER/192.168.126.1:9000?status=UP&lastDirtyTimestamp=1678619073891 HTTP/1.1
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Name: DefaultClient
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Version: 1.4
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Id: 192.168.126.1
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> Content-Length: 0
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> Host: localhost:8762
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> User-Agent: Java-EurekaClient/v1.9.13
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> Cookie: JSESSIONID=4A9AFA5DA4FF048EFB18507AFD9DEE21
+2023-03-12 19:19:34.655 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> Authorization: Basic cm9vdDoxMjM0NTY=
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "Expires: 0[\r][\n]"
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "X-Frame-Options: DENY[\r][\n]"
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "Content-Type: application/xml[\r][\n]"
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "Content-Length: 0[\r][\n]"
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "Date: Sun, 12 Mar 2023 11:19:34 GMT[\r][\n]"
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=60[\r][\n]"
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << X-XSS-Protection: 1; mode=block
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << Pragma: no-cache
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << Expires: 0
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << X-Frame-Options: DENY
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << Content-Type: application/xml
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << Content-Length: 0
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << Date: Sun, 12 Mar 2023 11:19:34 GMT
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << Keep-Alive: timeout=60
+2023-03-12 19:19:34.656 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << Connection: keep-alive
+2023-03-12 19:19:34.657 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 60000 MILLISECONDS
+2023-03-12 19:19:34.657 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.discovery.shared.MonitoredConnectionManager - Released connection is reusable.
+2023-03-12 19:19:34.657 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8762][null]
+2023-03-12 19:19:34.657 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8762][null]; keep alive for 60000 MILLISECONDS
+2023-03-12 19:19:34.657 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+2023-03-12 19:19:34.657 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.jersey.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://root:123456@localhost:8762/eureka//apps/GATEWAY-SERVER/192.168.126.1:9000; statusCode=200
+2023-03-12 19:19:34.657 [gateway-server,,] [DiscoveryClient-HeartbeatExecutor-0] DEBUG com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVER/192.168.126.1:9000 - Heartbeat status: 200
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: JSESSIONID][value: 4A9AFA5DA4FF048EFB18507AFD9DEE21][domain: localhost][path: /][expiry: null] match [localhost:8762/eureka/apps/delta]
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.a.h.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.a.h.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /eureka/apps/delta HTTP/1.1
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "GET /eureka/apps/delta HTTP/1.1[\r][\n]"
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "Accept: application/json[\r][\n]"
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Name: DefaultClient[\r][\n]"
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Version: 1.4[\r][\n]"
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Id: 192.168.126.1[\r][\n]"
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip[\r][\n]"
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "Host: localhost:8762[\r][\n]"
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "User-Agent: Java-EurekaClient/v1.9.13[\r][\n]"
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "Cookie: JSESSIONID=4A9AFA5DA4FF048EFB18507AFD9DEE21[\r][\n]"
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "Authorization: Basic cm9vdDoxMjM0NTY=[\r][\n]"
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> GET /eureka/apps/delta HTTP/1.1
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> Accept: application/json
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Name: DefaultClient
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Version: 1.4
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Id: 192.168.126.1
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> Host: localhost:8762
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> User-Agent: Java-EurekaClient/v1.9.13
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> Cookie: JSESSIONID=4A9AFA5DA4FF048EFB18507AFD9DEE21
+2023-03-12 19:19:34.670 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> Authorization: Basic cm9vdDoxMjM0NTY=
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Expires: 0[\r][\n]"
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "X-Frame-Options: DENY[\r][\n]"
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Content-Length: 86[\r][\n]"
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Date: Sun, 12 Mar 2023 11:19:34 GMT[\r][\n]"
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=60[\r][\n]"
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << X-XSS-Protection: 1; mode=block
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Pragma: no-cache
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Expires: 0
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << X-Frame-Options: DENY
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Content-Type: application/json
+2023-03-12 19:19:34.671 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Content-Length: 86
+2023-03-12 19:19:34.672 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Date: Sun, 12 Mar 2023 11:19:34 GMT
+2023-03-12 19:19:34.672 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Keep-Alive: timeout=60
+2023-03-12 19:19:34.672 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Connection: keep-alive
+2023-03-12 19:19:34.672 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 60000 MILLISECONDS
+2023-03-12 19:19:34.672 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x0][0xab]VJ,([0xc8][0xc9]LN,[0xc9][0xcc][0xcf]+V[0xb2][0xaa]V*K-*[0x6][0xb1][0xe3][0xe3]SRsJ[0x12][0x95][0xac][0x94][0x8c][0xcc][0x94]t@[0xca][0x80]B[0x19][0x89][0xc5][0x19][0xc9][0xf9])[0xa9]@[0xd1][0xd0][0x80]x[0xf3]x[0x88][0x4]L[0xbf][0x92]Utlm-[0x0][0xae]Ns[0x17]S[0x0][0x0][0x0]"
+2023-03-12 19:19:34.672 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.discovery.shared.MonitoredConnectionManager - Released connection is reusable.
+2023-03-12 19:19:34.672 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8762][null]
+2023-03-12 19:19:34.672 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8762][null]; keep alive for 60000 MILLISECONDS
+2023-03-12 19:19:34.672 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+2023-03-12 19:19:34.672 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.util.DeserializerStringCache - clearing global-level cache with size 0
+2023-03-12 19:19:34.672 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.util.DeserializerStringCache - clearing app-level serialization cache with size 0
+2023-03-12 19:19:34.672 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.jersey.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://root:123456@localhost:8762/eureka//apps/delta?; statusCode=200
+2023-03-12 19:19:34.672 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_7_
+2023-03-12 19:19:34.673 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 0
+2023-03-12 19:19:34.673 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 7
+2023-03-12 19:19:34.674 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_ORDER-SERVICE applying {pattern=/order-service/**} to Path
+2023-03-12 19:19:34.674 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_ORDER-SERVICE applying filter {regexp=/order-service/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2023-03-12 19:19:34.674 [gateway-server,,] [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_7_, is fetching remote regions? false 
+2023-03-12 19:19:34.674 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_ORDER-SERVICE
+2023-03-12 19:19:34.674 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_EUREKA-SERVER applying {pattern=/eureka-server/**} to Path
+2023-03-12 19:19:34.675 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_EUREKA-SERVER applying filter {regexp=/eureka-server/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2023-03-12 19:19:34.675 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_EUREKA-SERVER
+2023-03-12 19:19:34.675 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_CONFIG-SERVER applying {pattern=/config-server/**} to Path
+2023-03-12 19:19:34.675 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_CONFIG-SERVER applying filter {regexp=/config-server/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2023-03-12 19:19:34.675 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_CONFIG-SERVER
+2023-03-12 19:19:34.675 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_PRODUCT-SERVICE applying {pattern=/product-service/**} to Path
+2023-03-12 19:19:34.675 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_PRODUCT-SERVICE applying filter {regexp=/product-service/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2023-03-12 19:19:34.675 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_PRODUCT-SERVICE
+2023-03-12 19:19:34.675 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY-SERVER applying {pattern=/gateway-server/**} to Path
+2023-03-12 19:19:34.675 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_GATEWAY-SERVER applying filter {regexp=/gateway-server/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2023-03-12 19:19:34.676 [gateway-server,82619655131416d2,82619655131416d2] [elastic-5] DEBUG o.s.c.gateway.route.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_GATEWAY-SERVER
+2023-03-12 19:19:38.315 [gateway-server,,] [RibbonApacheHttpClientConfiguration.connectionManagerTimer] DEBUG o.a.h.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+2023-03-12 19:19:38.345 [gateway-server,,] [NFLoadBalancer-PingTimer-ORDER-SERVICE] DEBUG com.netflix.loadbalancer.BaseLoadBalancer - LoadBalancer:  PingTask executing [1] servers configured
+2023-03-12 19:19:39.326 [gateway-server,,] [PollingServerListUpdater-1] DEBUG c.n.loadbalancer.DynamicServerListLoadBalancer - List of Servers for ORDER-SERVICE obtained from Discovery client: [192.168.126.1:9091]
+2023-03-12 19:19:39.326 [gateway-server,,] [PollingServerListUpdater-1] DEBUG c.n.loadbalancer.ZoneAffinityServerListFilter - Determining if zone affinity should be enabled with given server list: [192.168.126.1:9091]
+2023-03-12 19:19:39.326 [gateway-server,,] [PollingServerListUpdater-1] DEBUG c.n.loadbalancer.ZoneAffinityServerListFilter - zoneAffinity is overriden. blackOutServerPercentage: 0.0, activeReqeustsPerServer: 0.0, availableServers: 1
+2023-03-12 19:19:39.326 [gateway-server,,] [PollingServerListUpdater-1] DEBUG c.n.loadbalancer.DynamicServerListLoadBalancer - Filtered List of Servers for ORDER-SERVICE obtained from Discovery client: [192.168.126.1:9091]
+2023-03-12 19:19:39.326 [gateway-server,,] [PollingServerListUpdater-1] DEBUG com.netflix.loadbalancer.BaseLoadBalancer - LoadBalancer [ORDER-SERVICE]: clearing server list (SET op)
+2023-03-12 19:19:39.326 [gateway-server,,] [PollingServerListUpdater-1] DEBUG com.netflix.loadbalancer.BaseLoadBalancer - LoadBalancer [ORDER-SERVICE]:  addServer [192.168.126.1:9091]
+2023-03-12 19:19:39.326 [gateway-server,,] [PollingServerListUpdater-1] DEBUG c.n.loadbalancer.DynamicServerListLoadBalancer - Setting server list for zones: {defaultzone=[192.168.126.1:9091]}
+2023-03-12 19:19:39.327 [gateway-server,,] [PollingServerListUpdater-1] DEBUG com.netflix.loadbalancer.BaseLoadBalancer - LoadBalancer [ORDER-SERVICE_defaultzone]: clearing server list (SET op)
+2023-03-12 19:19:39.327 [gateway-server,,] [PollingServerListUpdater-1] DEBUG com.netflix.loadbalancer.BaseLoadBalancer - LoadBalancer [ORDER-SERVICE_defaultzone]:  addServer [192.168.126.1:9091]
+2023-03-12 19:19:39.327 [gateway-server,,] [PollingServerListUpdater-1] DEBUG com.netflix.loadbalancer.BaseLoadBalancer - LoadBalancer [ORDER-SERVICE]:  forceQuickPing invoking
+2023-03-12 19:19:39.327 [gateway-server,,] [PollingServerListUpdater-1] DEBUG com.netflix.loadbalancer.BaseLoadBalancer - LoadBalancer:  PingTask executing [1] servers configured
