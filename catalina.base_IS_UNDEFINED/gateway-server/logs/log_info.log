@@ -59,3 +59,6 @@
 ]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@482df809
 2023-03-12 19:07:39.138 [gateway-server,,] [PollingServerListUpdater-0] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: ORDER-SERVICE.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
 2023-03-12 19:07:41.325 [gateway-server,328519e3d6f11e8c,328519e3d6f11e8c] [reactor-http-nio-2] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 19:08:01.152 [gateway-server,a8948ba31eb1d750,a8948ba31eb1d750] [reactor-http-nio-2] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 19:09:33.750 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:14:33.763 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
