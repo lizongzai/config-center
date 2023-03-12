@@ -63,3 +63,44 @@
 2023-03-12 19:09:33.750 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 2023-03-12 19:14:33.763 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 2023-03-12 19:19:33.774 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:24:33.780 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:29:33.786 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:34:33.794 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:39:33.804 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:44:33.820 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:49:33.829 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:54:33.835 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 19:59:33.850 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 20:04:33.852 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 20:09:33.865 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 20:14:33.869 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 20:15:18.085 [gateway-server,231fa3fb96e66d5d,231fa3fb96e66d5d] [reactor-http-nio-5] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:15:18.107 [gateway-server,231fa3fb96e66d5d,231fa3fb96e66d5d] [reactor-http-nio-5] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: PRODUCT-SERVICE.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2023-03-12 20:15:18.109 [gateway-server,231fa3fb96e66d5d,231fa3fb96e66d5d] [reactor-http-nio-5] INFO  com.netflix.util.concurrent.ShutdownEnabledTimer - Shutdown hook installed for: NFLoadBalancer-PingTimer-PRODUCT-SERVICE
+2023-03-12 20:15:18.109 [gateway-server,231fa3fb96e66d5d,231fa3fb96e66d5d] [reactor-http-nio-5] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: PRODUCT-SERVICE instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=PRODUCT-SERVICE,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2023-03-12 20:15:18.110 [gateway-server,231fa3fb96e66d5d,231fa3fb96e66d5d] [reactor-http-nio-5] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+2023-03-12 20:15:18.111 [gateway-server,231fa3fb96e66d5d,231fa3fb96e66d5d] [reactor-http-nio-5] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: PRODUCT-SERVICE.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2023-03-12 20:15:18.112 [gateway-server,231fa3fb96e66d5d,231fa3fb96e66d5d] [reactor-http-nio-5] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client PRODUCT-SERVICE initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=PRODUCT-SERVICE,current list of Servers=[192.168.126.1:7070],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.126.1:7070;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@2de57a3c
+2023-03-12 20:15:18.777 [gateway-server,02b022682192b5e6,02b022682192b5e6] [reactor-http-nio-5] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:15:19.028 [gateway-server,fdeed81927b74df0,fdeed81927b74df0] [reactor-http-nio-5] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:15:19.112 [gateway-server,,] [PollingServerListUpdater-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: PRODUCT-SERVICE.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2023-03-12 20:15:19.227 [gateway-server,995ecc03e9fd9522,995ecc03e9fd9522] [reactor-http-nio-5] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:15:19.419 [gateway-server,9fb6b681076e3eb1,9fb6b681076e3eb1] [reactor-http-nio-5] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:15:19.654 [gateway-server,b904eeaa83364ff6,b904eeaa83364ff6] [reactor-http-nio-5] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:19:33.885 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 20:24:33.894 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 20:25:05.605 [gateway-server,2ab2d3ecca84f92d,2ab2d3ecca84f92d] [reactor-http-nio-7] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:25:05.781 [gateway-server,2994eb2234407964,2994eb2234407964] [reactor-http-nio-7] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:25:05.970 [gateway-server,2616db5bd090fc8a,2616db5bd090fc8a] [reactor-http-nio-7] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:25:06.139 [gateway-server,51c49f8253579571,51c49f8253579571] [reactor-http-nio-7] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:25:06.307 [gateway-server,cea6b3ff2f2375d4,cea6b3ff2f2375d4] [reactor-http-nio-7] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:25:06.488 [gateway-server,88b38e08f3f9b08e,88b38e08f3f9b08e] [reactor-http-nio-7] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:26:47.403 [gateway-server,edc80e9e72cafa56,edc80e9e72cafa56] [reactor-http-nio-7] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:26:47.669 [gateway-server,b647db97bdf11fea,b647db97bdf11fea] [reactor-http-nio-7] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:26:47.906 [gateway-server,ee4e26eaf6ad47dd,ee4e26eaf6ad47dd] [reactor-http-nio-7] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:28:03.462 [gateway-server,2f876b581f136ff3,2f876b581f136ff3] [reactor-http-nio-7] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:28:04.315 [gateway-server,f94604e27b833723,f94604e27b833723] [reactor-http-nio-7] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:28:11.055 [gateway-server,5fc33b8eaac0effb,5fc33b8eaac0effb] [reactor-http-nio-7] INFO  com.example.filter.AccessFilter - token is OK!
+2023-03-12 20:29:33.898 [gateway-server,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

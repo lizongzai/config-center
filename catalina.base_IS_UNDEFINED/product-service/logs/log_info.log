@@ -216,3 +216,5 @@
 2023-03-12 20:15:54.228 [product-service,,] [RMI TCP Connection(5)-26.26.26.1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2023-03-12 20:15:55.849 [product-service,,] [RMI TCP Connection(5)-26.26.26.1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=product-service, profiles=[prod], label=main, version=07f32d56ef675adf2cd143173c1d3f7638aeac3c, state=null
 2023-03-12 20:20:52.360 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 20:25:52.369 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-12 20:30:52.370 [product-service,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
