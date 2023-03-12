@@ -1,87 +1,87 @@
-server:
-  port: 9090
-
-spring:
-  application:
-    # 应用名称
-    name: order-service
-  main:
-    allow-circular-references: true
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
+#server:
+#  port: 9090
+#
+#spring:
+#  application:
+#    # 应用名称
+#    name: order-service
+#  main:
+#    allow-circular-references: true
+#  mvc:
+#    pathmatch:
+#      matching-strategy: ant_path_matcher
+##  zipkin:
+##    base-url: http://192.168.126.64:9411/ # 服务端地址
+##    sender:
+##      type: web                      # 数据传输方式，web 表示以 HTTP 报文的形式向服务端发送数据
+##  sleuth:
+##    sampler:
+##      probability: 1.0               # 收集数据百分比，默认 0.1（10%）
 #  zipkin:
 #    base-url: http://192.168.126.64:9411/ # 服务端地址
 #    sender:
-#      type: web                      # 数据传输方式，web 表示以 HTTP 报文的形式向服务端发送数据
+#      type: rabbit
+#    rabbitmq:
+#      queue: zipkin                  # 队列名称
+#  rabbitmq:
+#    host: 192.168.126.64             # 服务器 IP
+#    port: 5672                       # 服务器端口
+#    username: lizongzai                  # 用户名
+#    password: password               # 密码
+#    virtual-host: /                  # 虚拟主机地址
+#    listener:
+#      direct:
+#        retry:
+#          enabled: true              # 是否开启发布重试
+#          max-attempts: 5            # 最大重试次数
+#          initial-interval: 5000     # 重试间隔时间（单位毫秒）
+#      simple:
+#        retry:
+#          enabled: true              # 是否开启消费者重试
+#          max-attempts: 5            # 最大重试次数
+#          initial-interval: 5000     # 重试间隔时间（单位毫秒）
 #  sleuth:
 #    sampler:
 #      probability: 1.0               # 收集数据百分比，默认 0.1（10%）
-  zipkin:
-    base-url: http://192.168.126.64:9411/ # 服务端地址
-    sender:
-      type: rabbit
-    rabbitmq:
-      queue: zipkin                  # 队列名称
-  rabbitmq:
-    host: 192.168.126.64             # 服务器 IP
-    port: 5672                       # 服务器端口
-    username: lizongzai                  # 用户名
-    password: password               # 密码
-    virtual-host: /                  # 虚拟主机地址
-    listener:
-      direct:
-        retry:
-          enabled: true              # 是否开启发布重试
-          max-attempts: 5            # 最大重试次数
-          initial-interval: 5000     # 重试间隔时间（单位毫秒）
-      simple:
-        retry:
-          enabled: true              # 是否开启消费者重试
-          max-attempts: 5            # 最大重试次数
-          initial-interval: 5000     # 重试间隔时间（单位毫秒）
-  sleuth:
-    sampler:
-      probability: 1.0               # 收集数据百分比，默认 0.1（10%）
-
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: "jdbc:mysql://localhost:3306/micro_service?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai"
-    username: root
-    password: password
-  redis:
-    #超时时间
-    timeout: 10000ms
-    #服务器地址
-    host: 192.168.126.64
-    #服务器端口
-    port: 6379
-    #数据库
-    database: 0
-    #密码
-    password: Rational123
-    lettuce:
-      pool:
-        #最大连接数，默认8
-        max-active: 1024
-        #最大连接阻塞等待时间，默认-1
-        max-wait: 10000ms
-        #最大空闲连接
-        max-idle: 200
-        #最小空闲连接
-        min-idle: 5
-
-# 配置Eureka Server注册中心
-eureka:
-  instance:
-    # 是否开启IP地址注册
-    prefer-ip-address: true
-    # 主机地址+端口号
-    instance-id: ${spring.cloud.client.ip-address}:${server.port}
-  client:
-    serviceUrl:
-      # 注册中心对外暴露的注册地址
-      defaultZone: http://root:123456@localhost:8761/eureka/,http://root:123456@localhost:8762/eureka/
-    # 是否将自己注册到注册中心,默认为true
-    register-with-eureka: true
-    fetch-registry: true
+#
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: "jdbc:mysql://localhost:3306/micro_service?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai"
+#    username: root
+#    password: password
+#  redis:
+#    #超时时间
+#    timeout: 10000ms
+#    #服务器地址
+#    host: 192.168.126.64
+#    #服务器端口
+#    port: 6379
+#    #数据库
+#    database: 0
+#    #密码
+#    password: Rational123
+#    lettuce:
+#      pool:
+#        #最大连接数，默认8
+#        max-active: 1024
+#        #最大连接阻塞等待时间，默认-1
+#        max-wait: 10000ms
+#        #最大空闲连接
+#        max-idle: 200
+#        #最小空闲连接
+#        min-idle: 5
+#
+## 配置Eureka Server注册中心
+#eureka:
+#  instance:
+#    # 是否开启IP地址注册
+#    prefer-ip-address: true
+#    # 主机地址+端口号
+#    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+#  client:
+#    serviceUrl:
+#      # 注册中心对外暴露的注册地址
+#      defaultZone: http://root:123456@localhost:8761/eureka/,http://root:123456@localhost:8762/eureka/
+#    # 是否将自己注册到注册中心,默认为true
+#    register-with-eureka: true
+#    fetch-registry: true

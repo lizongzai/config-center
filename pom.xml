@@ -10,6 +10,10 @@
     <module>eureka-server02</module>
     <module>product-service</module>
     <module>order-service</module>
+    <module>config-client</module>
+    <module>config-server01</module>
+    <module>config-server02</module>
+    <module>gateway-server</module>
   </modules>
   <packaging>pom</packaging>
 

@@ -1,0 +1,26 @@
+server:
+  port: 8888 # 端口
+
+spring:
+  application:
+    name: config-server # 应用名称
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lizongzai/config-repo.git # 配置文件所在仓库地址
+          username: lizongzai@gmail.com            # Github 等产品的登录账号
+          password: lizongzai@064082            # Github 等产品的登录密码
+          default-label: main # 配置文件分支
+          #search-paths:         # 配置文件所在根目录
+
+# 配置 Eureka Server 注册中心
+eureka:
+  instance:
+    prefer-ip-address: true       # 是否使用 ip 地址注册
+    instance-id: ${spring.cloud.client.ip-address}:${server.port} # ip:port
+  client:
+    service-url:                  # 设置服务注册中心地址
+      defaultZone: http://root:123456@localhost:8761/eureka/,http://root:123456@localhost:8762/eureka/
+    register-with-eureka: true
+    fetch-registry: true

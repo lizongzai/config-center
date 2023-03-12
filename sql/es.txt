@@ -1,0 +1,1 @@
+java -jar zipkin.jar --STORAGE_TYPE=elasticsearch --ES_HOSTS=http://192.168.126.70:9200/,http://192.168.126.71:9200/,http://192.168.126.72:9200/ --RABBIT_ADDRESSES=192.168.126.64:5672 --RABBIT_USER=lizongzai --RABBIT_PASSWORD=password --RABBIT_VIRTUAL_HOST=/ --RABBIT_QUEUE=zipkin
