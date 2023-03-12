@@ -1,4 +1,3 @@
-
 server:
   port: 8889 # 端口
 
@@ -11,7 +10,7 @@ spring:
         git:
           uri: https://github.com/lizongzai/config-repo.git # 配置文件所在仓库地址
           username: lizongzai@gmail.com            # Github 等产品的登录账号
-          password: ******            # Github 等产品的登录密码
+          password: lizongzai@064082            # Github 等产品的登录密码
           default-label: main # 配置文件分支
           #search-paths:         # 配置文件所在根目录
 

@@ -126,6 +126,18 @@
       <artifactId>spring-cloud-starter-config</artifactId>
     </dependency>
 
+    <!-- spring boot actuator 依赖 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
 
+    <!--Junit 测试单元依赖-->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 </project>

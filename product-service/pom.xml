@@ -102,6 +102,12 @@
       <artifactId>spring-cloud-starter-config</artifactId>
     </dependency>
 
+    <!-- spring boot actuator 依赖 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+
 
     <!--Junit 测试单元依赖-->
     <dependency>
