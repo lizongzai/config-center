@@ -20,11 +20,13 @@
 
   <!-- 项目依赖 -->
   <dependencies>
+
     <!-- spring cloud config server 依赖 -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-config-server</artifactId>
     </dependency>
+
     <!-- netflix eureka client 依赖 -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
@@ -37,6 +39,11 @@
       <artifactId>spring-boot-starter-security</artifactId>
     </dependency>
 
+    <!-- spring cloud starter bus amqp 依赖 -->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+    </dependency>
 
     <!-- spring boot test 依赖 -->
     <dependency>

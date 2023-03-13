@@ -10,12 +10,19 @@ spring:
       discovery:
         enabled: true # 开启
         service-id: config-server # 指定配置中心服务端的 service-id
-
-# 度量指标监控与健康检查
-management:
-  endpoints:
-    web:
-      base-path: /actuator    # 访问端点根路径，默认为 /actuator
-      exposure:
-        include: '*'          # 需要开启的端点，这里主要用到的是 refresh 这个端点
-        #exclude:             # 不需要开启的端点
+#  # 消息队列
+#  rabbitmq:
+#    host: 192.168.126.64
+#    port: 5672
+#    username: lizongzai
+#    password: password
+#    virtual-host: /
+#
+## 度量指标监控与健康检查
+#management:
+#  endpoints:
+#    web:
+#      base-path: /actuator    # 访问端点根路径，默认为 /actuator
+#      exposure:
+#        include: '*'          # 需要开启的端点，这里主要用到的是 refresh 这个端点
+#        #exclude:             # 不需要开启的端点
