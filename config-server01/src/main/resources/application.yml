@@ -13,6 +13,11 @@ spring:
           password: lizongzai@064082            # Github 等产品的登录密码
           default-label: main # 配置文件分支
           #search-paths:         # 配置文件所在根目录
+  # 配置中心用户安全认证
+  security:
+    user:
+      name: user
+      password: 123456
 
 # 配置 Eureka Server 注册中心
 eureka:

@@ -19,9 +19,17 @@ public class ConfigController {
   @Value("${name}")
   private String name;
 
+//  @Value("${password}")
+//  private String password;
+
   @GetMapping("/name")
   public String getName() {
     return name;
   }
+
+//  @GetMapping("/password")
+//  public String getPassword() {
+//    return password;
+//  }
 
 }

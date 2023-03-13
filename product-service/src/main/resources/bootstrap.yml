@@ -3,7 +3,10 @@ spring:
     config:
       name: product-service # 配置文件名称，对应 git 仓库中配置文件前半部分
       label: main # git 分支
-      profile: prod # 指定环境
+      profile: dev # 指定环境
+      # 配置中心用户安全认证
+      username: user
+      password: 123456
       discovery:
         enabled: true # 开启
         service-id: config-server # 指定配置中心服务端的 service-id
